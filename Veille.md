@@ -3,8 +3,8 @@
   
 ## ☁️ Sites  
   
-#### 🔒 Cybersécurité  
-Pour suivre l'évolution des avancées dans la cyber, les failles, nouvelles lois...  
+#### 🔒 Cybersécurité
+_Pour suivre l'évolution des avancées dans la cyber, les failles, nouvelles lois..._   
   
 - https://cyber.gouv.fr/nous-connaitre/lagence/organisation/cert-fr  
 - ANSSI : https://www.ssi.gouv.fr  
@@ -12,15 +12,15 @@ Pour suivre l'évolution des avancées dans la cyber, les failles, nouvelles loi
 - The Hacker News : https://thehackernews.com  
     
       
-#### 📌 Actualité IT  
-Pour suivre les nouveautées numériques...  
+#### 📌 Actualité IT
+_Pour suivre les nouveautées numériques..._  
   
 - LeMagIT : https://www.lemagit.fr  
 - ZDNet : https://www.zdnet.fr  
   
 
-#### 🪟 Sources microsoft  
-Pour decouvrir les nouveautés de Microsoft, qui reste malgré tout le nerf de la guerre...
+#### 🪟 Sources microsoft
+_Pour decouvrir les nouveautés de Microsoft, qui reste malgré tout le nerf de la guerre..._
   
 
 - Microsoft Learn : https://learn.microsoft.com  
@@ -28,31 +28,31 @@ Pour decouvrir les nouveautés de Microsoft, qui reste malgré tout le nerf de l
   
 
 #### 🌐 Réseau / Virtualisation
-Pour se maintenir à niveau dans les logiciels utilisés...  
+_Pour se maintenir à niveau dans les logiciels utilisés..._  
   
 - Cisco Blob : https://blogs.cisco.com  
 - VMware Blog : https://blogs.vmware.com  
   
 
-## 🎙️ PodCast   
-Pour un suivi auditif, lors des trajets en voiture ou moto, ou pendant d'autres activités (cuisine, bricolage, puzzzle, ...) ...  
+## 🎙️ PodCast
+_Pour un suivi auditif, lors des trajets en voiture ou moto, ou pendant d'autres activités (cuisine, bricolage, puzzzle, ...) ..._  
     
 - NoLimiteSecu  
 - Le code à changé  
   
-## 🎙️ A suivre sur YouTube  
-Des vidéos interressantes sur le monde de l'IT...  
+## 🎙️ A suivre sur YouTube
+_Des vidéos interressantes sur le monde de l'IT..._  
   
 - ITconnect  
 - Micode  
   
-## 👥 Chaine FB  
-Des mini tips parfois utiles...  
+## 👥 Chaine FB
+_Des mini tips parfois utiles..._  
   
 - Gabzer.mp4  
     
-## 🍿 A voir  
-Séries à voir en VOSTVO pour se plonger dans le vocabulire de l'IT en VO  
+## 🍿 A voir
+_Séries à voir en VOSTVO pour se plonger dans le vocabulire de l'IT en VO..._  
   
 - Black Mirror  
 - IT Crown
