@@ -1,7 +1,7 @@
    
-## Liste des tips pour tenir une bonne veille  
+# Liste des tips pour tenir une bonne veille  
   
-### Sites  
+## Sites  
   
 #### Cybersécurité  
 - https://cyber.gouv.fr/nous-connaitre/lagence/organisation/cert-fr  
@@ -20,28 +20,23 @@
 #### Réseau / Virtualisation
 - Cisco Blob : https://blogs.cisco.com  
 - VMware Blog : https://blogs.vmware.com  
-
-- ~~https://www.innergeek.us/geek-test.html~~  
-  
-### PodCast   
+    
+## PodCast   
   
 - NoLimiteSecu  
 - Le code à changé  
   
-### A suivre sur YouTube  
+## A suivre sur YouTube  
   
 - ITconnect  
 - Micode  
   
-### Tips  
-- Deepl  
-- Wordreferance  
-  
-### A voir en VOSTVO
+## Chaine FB  
+- Gabzer.mp4  
+    
+## A voir en VOSTVO
 - Black Mirror  
 - IT Crown
 
-### Chaine FB  
-- Gabzer.mp4  
 
-
+ ~~https://www.innergeek.us/geek-test.html~~  
