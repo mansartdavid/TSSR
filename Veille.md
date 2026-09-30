@@ -62,9 +62,3 @@ _Séries à voir en VOSTVO pour se plonger dans le vocabulire de l'IT en VO..._
 
 
  ### 🤪 ~~https://www.innergeek.us/geek-test.html~~ 🤪  
-  
-- Black Mirror  
-- IT Crown
-
-
- ### 🤪 ~~https://www.innergeek.us/geek-test.html~~ 🤪
