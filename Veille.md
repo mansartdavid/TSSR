@@ -1,12 +1,15 @@
    
+   
 # 🖥️ Liste pour tenir une bonne veille  
-  
+  _Cette veille technologique me permet de suivre les évolutions du monde informatique, notamment dans les domaines des systèmes, des réseaux, de la cybersécurité et de la virtualisation. Elle contribue à enrichir mes connaissances et à développer mes compétences dans le cadre de ma formation TSSR._  
+    
 ## ☁️ Sites  
   
 #### 🔒 Cybersécurité
 _Pour suivre l'évolution des avancées dans la cyber, les failles, nouvelles lois..._   
   
 - https://cyber.gouv.fr/nous-connaitre/lagence/organisation/cert-fr  
+- https://www.cybermalveillance.gouv.fr/  
 - ANSSI : https://www.ssi.gouv.fr  
 - CERT-FR (alerte sur les vulnérabilité) : https://www.cert.ssi.gouv.fr  
 - The Hacker News : https://thehackernews.com  
@@ -37,14 +40,14 @@ _Pour se maintenir à niveau dans les logiciels utilisés..._
 ## 🎙️ PodCast
 _Pour un suivi auditif, lors des trajets en voiture ou moto, ou pendant d'autres activités (cuisine, bricolage, puzzzle, ...) ..._  
     
-- NoLimiteSecu  
-- Le code à changé  
+- NoLimiteSecu : https://www.nolimitsecu.fr/  
+- Le code à changé : https://www.radiofrance.fr/franceinter/podcasts/le-code-a-change  
   
 ## 🎙️ A suivre sur YouTube
 _Des vidéos interressantes sur le monde de l'IT..._  
   
-- ITconnect  
-- Micode  
+- ITconnect : https://www.youtube.com/@IT-Connect  
+- Micode : https://www.youtube.com/@Micode
   
 ## 👥 Chaine FB
 _Des mini tips parfois utiles..._  
@@ -53,6 +56,12 @@ _Des mini tips parfois utiles..._
     
 ## 🍿 A voir
 _Séries à voir en VOSTVO pour se plonger dans le vocabulire de l'IT en VO..._  
+  
+- Black Mirror  
+- IT Crown
+
+
+ ### 🤪 ~~https://www.innergeek.us/geek-test.html~~ 🤪  
   
 - Black Mirror  
 - IT Crown
