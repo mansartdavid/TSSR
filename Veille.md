@@ -9,7 +9,7 @@
 - CERT-FR (alerte sur les vulnérabilité) : https://www.cert.ssi.gouv.fr  
 - The Hacker News : https://thehackernews.com  
     
-- #### Actualité IT  
+#### Actualité IT  
 - LeMagIT : https://www.lemagit.fr  
 - ZDNet : https://www.zdnet.fr  
   
