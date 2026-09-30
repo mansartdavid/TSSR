@@ -1,5 +1,5 @@
    
-# 🖥️ Liste des tips pour tenir une bonne veille  
+# 🖥️ Liste pour tenir une bonne veille  
   
 ## ☁️ Sites  
   
@@ -39,4 +39,4 @@
 - IT Crown
 
 
- # 🤪 ~~https://www.innergeek.us/geek-test.html~~  
+ ### 🤪 ~~https://www.innergeek.us/geek-test.html~~  
