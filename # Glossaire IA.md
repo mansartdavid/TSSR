@@ -198,7 +198,7 @@ Technique permettant à une IA de consulter des documents avant de répondre.
 *Sans RAG :*  
 *Quelle est la procédure d'installation de GLPI dans mon entreprise ?*  
 *Le LLM ne la connaît pas.*  
-*Avec RAG :  
+*Avec RAG :*  
 *Le système cherche dans les documents internes → trouve la procédure → le LLM rédige la réponse.*  
 *On peut voir ça comme :*  
 *LLM = cerveau*  
