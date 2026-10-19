@@ -16,7 +16,7 @@ Suite d'étapes à suivre pour obtenir un résultat.
 ### Alignement
 Fait de s'assurer qu'une IA agit comme on le souhaite.
 
-### API
+### API (Application Programming Interface ou interface de programmation d'application)
 Passerelle permettant à deux logiciels de communiquer.
 
 ### Apprentissage
@@ -59,7 +59,8 @@ Attaque informatique réalisée ou améliorée grâce à l'intelligence artifici
 ## D
 
 ### Danger
-Risque ou menace possible.
+En intelligence artificielle, le terme DANGER fait principalement référence au DANGER Framework (cadre DANGER). Il s'agit d'une méthodologie de recherche développée par le projet CASMI (Centre de recherche pour l'IA sensible au contexte) de l'Université Northwestern.  
+Ce cadre sert à effectuer des tests de résistance (stress tests) sur les modèles d'intelligence artificielle afin d'évaluer la robustesse et la fiabilité de leurs explications (XAI ou Explainable AI).
 
 ### Distillation
 Méthode pour créer une IA plus légère à partir d'une IA plus puissante.
@@ -141,7 +142,7 @@ Grande IA spécialisée dans la compréhension et la génération de texte.
 Méthode permettant à une machine d'apprendre à partir d'exemples.
 
 ### Mathématique
-Science des nombres, des calculs et des formules.
+Les mathématiques sont le langage et le socle fondamental sur lequel reposent l'apprentissage et le fonctionnement des modèles d'intelligence artificielle. Sans elles, les algorithmes ne pourraient ni représenter les données ni apprendre de celles-ci.
 
 ### Mémoire unifiée
 Mémoire partagée entre plusieurs composants d'un ordinateur.
@@ -151,8 +152,7 @@ Mémoire partagée entre plusieurs composants d'un ordinateur.
 ## N
 
 ### NVIDIA
-Entreprise connue pour ses cartes graphiques et ses technologies d'IA.
-
+le pilier matériel et logiciel incontournable de l'intelligence artificielle moderne, souvent qualifiée de « fournisseur de pelles » ou de « pétrole » du secteur de l'IA.
 ---
 
 ## O
@@ -236,7 +236,7 @@ Action de contrôler qu'une information est correcte.
 ## W
 
 ### Wikipédia
-Encyclopédie gratuite en ligne rédigée par ses utilisateurs.
+Le carburant fondamental pour l'entraînement des intelligences artificielles et un modèle d'information rival face à la concentration des géants de la tech.
 
 ---
 
