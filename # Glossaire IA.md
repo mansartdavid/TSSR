@@ -190,6 +190,20 @@ Mémoire temporaire utilisée par un ordinateur pour travailler rapidement.
  (en français : Génération Augmentée par Recherche)
 Technique permettant à une IA de consulter des documents avant de répondre.
 
+*LLM = comprend et génère du texte.
+RAG = ajoute une étape de recherche avant la génération.
+
+Donc un RAG n'est généralement pas une IA différente d'un LLM
+Sans RAG :
+Quelle est la procédure d'installation de GLPI dans mon entreprise ?
+Le LLM ne la connaît pas.
+Avec RAG :
+Le système cherche dans les documents internes → trouve la procédure → le LLM rédige la réponse.
+On peut voir ça comme :
+LLM = cerveau
+RAG = bibliothèque
+Le cerveau réfléchit, la bibliothèque fournit les informations.*
+
 ### Réseau neuronal
 Système inspiré du cerveau humain permettant à une IA d'apprendre.
 
