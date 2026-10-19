@@ -148,11 +148,12 @@ Les mathématiques sont le langage et le socle fondamental sur lequel reposent l
 Mémoire partagée entre plusieurs composants d'un ordinateur.
 
 ---
-
 ## N
 
-### NVIDIA  
-le pilier matériel et logiciel incontournable de l'intelligence artificielle moderne, souvent qualifiée de « fournisseur de pelles » ou de « pétrole » du secteur de l'IA.
+### NVIDIA
+
+Le pilier matériel et logiciel incourtournable de l'intelligence artificielle moderne, souvent qualifiée de "fournisseur de pelles" ou de "pétrole" du secteur de l'IA.
+
 ---
 
 ## O
@@ -190,19 +191,19 @@ Mémoire temporaire utilisée par un ordinateur pour travailler rapidement.
  (en français : Génération Augmentée par Recherche)
 Technique permettant à une IA de consulter des documents avant de répondre.
 
-*LLM = comprend et génère du texte.
-RAG = ajoute une étape de recherche avant la génération.
+*LLM = comprend et génère du texte.*
+*RAG = ajoute une étape de recherche avant la génération.*
 
-Donc un RAG n'est généralement pas une IA différente d'un LLM
-Sans RAG :
-Quelle est la procédure d'installation de GLPI dans mon entreprise ?
-Le LLM ne la connaît pas.
-Avec RAG :
-Le système cherche dans les documents internes → trouve la procédure → le LLM rédige la réponse.
-On peut voir ça comme :
-LLM = cerveau
-RAG = bibliothèque
-Le cerveau réfléchit, la bibliothèque fournit les informations.*
+*Donc un RAG n'est généralement pas une IA différente d'un LLM*
+*Sans RAG :*
+*Quelle est la procédure d'installation de GLPI dans mon entreprise ?*
+*Le LLM ne la connaît pas.*
+*Avec RAG :
+*Le système cherche dans les documents internes → trouve la procédure → le LLM rédige la réponse.*
+*On peut voir ça comme :*
+*LLM = cerveau*
+*RAG = bibliothèque*
+*Le cerveau réfléchit, la bibliothèque fournit les informations.*
 
 ### Réseau neuronal
 Système inspiré du cerveau humain permettant à une IA d'apprendre.
