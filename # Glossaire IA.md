@@ -1,4 +1,4 @@
-# 🤖 Glossaire de l'IA
+# :robot: Glossaire de l'IA
 
 > Ce glossaire regroupe les principaux termes liés à l'intelligence artificielle.
 > Les définitions sont volontairement simplifiées pour faciliter l'apprentissage et les révisions.
@@ -151,7 +151,7 @@ Mémoire partagée entre plusieurs composants d'un ordinateur.
 
 ## N
 
-### NVIDIA
+### NVIDIA  
 le pilier matériel et logiciel incontournable de l'intelligence artificielle moderne, souvent qualifiée de « fournisseur de pelles » ou de « pétrole » du secteur de l'IA.
 ---
 
@@ -186,7 +186,8 @@ Instruction ou question donnée à une IA.
 ### RAM (DRAM)
 Mémoire temporaire utilisée par un ordinateur pour travailler rapidement.
 
-### RAG
+### RAG Retrieval Augmented Generation
+ (en français : Génération Augmentée par Recherche)
 Technique permettant à une IA de consulter des documents avant de répondre.
 
 ### Réseau neuronal
