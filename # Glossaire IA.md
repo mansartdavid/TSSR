@@ -240,11 +240,4 @@ Le carburant fondamental pour l'entraînement des intelligences artificielles et
 
 ---
 
-## 📚 Notes personnelles
-
-| Terme | Définition | Exemple |
-|---------|---------|---------|
-| | | |
-| | | |
-| | | |
 
