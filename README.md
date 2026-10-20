@@ -2,5 +2,5 @@
 - [Veille Via VSCode](https://github.com/mansartdavid/TSSR/blob/main/Veille.md)
 - [Glossaire de l'IA](https://github.com/mansartdavid/TSSR/blob/main/%23%20Glossaire%20IA.md)
 - [time line OS et autre infos](https://eylenburg.github.io/os_familytree.htm)
-- [Cheat Sheep Windows](https://github.com/mansartdavid/TSSR/blob/main/CheatSheetWindows)
+- [Cheat Sheep Windows](https://github.com/mansartdavid/TSSR/blob/main/CheatSheepWindows)
 - [Commandes Win +R](https://github.com/mansartdavid/TSSR/blob/main/Win%20%2B%20R)
