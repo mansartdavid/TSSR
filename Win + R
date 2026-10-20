@@ -1,0 +1,185 @@
+# 🛠️ Cheat Sheet Windows - TSSR
+
+## 📦 Légende
+
+| Type | Description |
+|--------|-------------|
+| .cpl | Applet du Panneau de configuration |
+| .msc | Console Microsoft Management Console |
+| .exe | Exécutable Windows |
+| Commande | Commande intégrée Windows |
+
+---
+
+# 🌐 Réseau
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| ncpa.cpl | CPL | Connexions réseau |
+| inetcpl.cpl | CPL | Options Internet |
+| firewall.cpl | CPL | Pare-feu Windows |
+| ipconfig | Commande | Configuration IP |
+| ping | Commande | Test réseau |
+| tracert | Commande | Tracé de route |
+| nslookup | Commande | Résolution DNS |
+| netstat | Commande | Connexions réseau |
+| arp | Commande | Cache ARP |
+| route | Commande | Table de routage |
+
+---
+
+# 💻 Système
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| sysdm.cpl | CPL | Propriétés système |
+| timedate.cpl | CPL | Date et heure |
+| intl.cpl | CPL | Région et langue |
+| powercfg.cpl | CPL | Gestion de l'alimentation |
+| msconfig | EXE | Configuration système |
+| winver | EXE | Version de Windows |
+
+---
+
+# 👤 Utilisateurs et Sécurité
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| lusrmgr.msc | MSC | Utilisateurs et groupes locaux |
+| secpol.msc | MSC | Politique de sécurité locale |
+| credwiz | EXE | Gestionnaire d'identifiants |
+| wscui.cpl | CPL | Centre de sécurité Windows |
+| netplwiz | EXE | Comptes utilisateurs avancés |
+
+---
+
+# 🔧 Administration
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| compmgmt.msc | MSC | Gestion de l'ordinateur |
+| services.msc | MSC | Services Windows |
+| eventvwr.msc | MSC | Observateur d'événements |
+| gpedit.msc | MSC | Stratégies de groupe |
+| regedit | EXE | Éditeur du registre |
+| taskmgr | EXE | Gestionnaire des tâches |
+| perfmon.msc | MSC | Moniteur de performances |
+| rsop.msc | MSC | Résultat des stratégies appliquées |
+
+---
+
+# 💾 Stockage
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| diskmgmt.msc | MSC | Gestion des disques |
+| dfrgui | EXE | Défragmentation |
+| cleanmgr | EXE | Nettoyage disque |
+| diskpart | Commande | Gestion avancée des disques |
+
+---
+
+# 🖨️ Imprimantes
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| control printers | Commande | Imprimantes |
+| printmanagement.msc | MSC | Gestion des impressions (Pro/Serveur) |
+
+---
+
+# 📁 Partages et fichiers
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| fsmgmt.msc | MSC | Dossiers partagés |
+| explorer | EXE | Explorateur de fichiers |
+
+---
+
+# 🔊 Audio, Vidéo et Périphériques
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| mmsys.cpl | CPL | Paramètres audio |
+| joy.cpl | CPL | Contrôleurs de jeu |
+| main.cpl | CPL | Souris |
+| control keyboard | Commande | Clavier |
+| bthprops.cpl | CPL | Bluetooth |
+| colorcpl | CPL | Gestion des couleurs |
+| devmgmt.msc | MSC | Gestionnaire de périphériques |
+
+---
+
+# 🖥️ Affichage
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| desk.cpl | CPL | Paramètres d'affichage (anciens Windows) |
+| control.exe /name Microsoft.Display | Commande | Affichage moderne |
+
+---
+
+# 🚀 Outils de dépannage
+
+| Commande | Type | Description |
+|-----------|------|-------------|
+| cmd | EXE | Invite de commandes |
+| powershell | EXE | PowerShell |
+| wt | EXE | Windows Terminal |
+| dxdiag | EXE | Diagnostic DirectX |
+| msinfo32 | EXE | Informations système |
+| mrt | EXE | Outil de suppression de logiciels malveillants |
+| sfc /scannow | Commande | Vérification système |
+| chkdsk | Commande | Vérification disque |
+
+---
+
+# ⭐ TOP 20 TSSR À CONNAÎTRE PAR CŒUR
+
+```text
+appwiz.cpl
+ncpa.cpl
+sysdm.cpl
+diskmgmt.msc
+services.msc
+eventvwr.msc
+gpedit.msc
+lusrmgr.msc
+devmgmt.msc
+regedit
+taskmgr
+compmgmt.msc
+powershell
+cmd
+inetcpl.cpl
+firewall.cpl
+fsmgmt.msc
+msinfo32
+dxdiag
+netplwiz
+```
+
+---
+
+# 🏛️ Registre Windows (Hives)
+
+| Ruche | Abréviation | Contenu |
+|---------|---------|---------|
+| HKEY_CLASSES_ROOT | HKCR | Associations de fichiers |
+| HKEY_CURRENT_USER | HKCU | Profil utilisateur connecté |
+| HKEY_LOCAL_MACHINE | HKLM | Configuration machine |
+| HKEY_USERS | HKU | Tous les profils utilisateurs |
+| HKEY_CURRENT_CONFIG | HKCC | Configuration matérielle active |
+
+## Chemins souvent utilisés
+
+```text
+HKCU\Software
+HKLM\Software
+HKLM\Software\Microsoft
+HKLM\SYSTEM
+HKLM\SYSTEM\CurrentControlSet\Services
+HKCU\Control Panel
+HKCU\Environment
+```
