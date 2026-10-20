@@ -18,13 +18,13 @@
 | ncpa.cpl | CPL | Connexions réseau |
 | inetcpl.cpl | CPL | Options Internet |
 | firewall.cpl | CPL | Pare-feu Windows |
-| ipconfig | Commande | Configuration IP |
-| ping | Commande | Test réseau |
-| tracert | Commande | Tracé de route |
-| nslookup | Commande | Résolution DNS |
-| netstat | Commande | Connexions réseau |
-| arp | Commande | Cache ARP |
-| route | Commande | Table de routage |
+| ipconfig | CMD | Configuration IP |
+| ping | CMD | Test de connectivité |
+| tracert | CMD | Tracé de route |
+| nslookup | CMD | Résolution DNS |
+| netstat | CMD | Connexions réseau |
+| arp | CMD | Cache ARP |
+| route | CMD | Table de routage |
 
 ---
 
@@ -58,9 +58,9 @@
 | Commande | Type | Description |
 |-----------|------|-------------|
 | compmgmt.msc | MSC | Gestion de l'ordinateur |
-| services.msc | MSC | Services Windows |
+| services.msc | MSC | Gestion des services |
 | eventvwr.msc | MSC | Observateur d'événements |
-| gpedit.msc | MSC | Stratégies de groupe |
+| gpedit.msc | MSC | Stratégies de groupe locales |
 | regedit | EXE | Éditeur du registre |
 | taskmgr | EXE | Gestionnaire des tâches |
 | perfmon.msc | MSC | Moniteur de performances |
@@ -75,7 +75,7 @@
 | diskmgmt.msc | MSC | Gestion des disques |
 | dfrgui | EXE | Défragmentation |
 | cleanmgr | EXE | Nettoyage disque |
-| diskpart | Commande | Gestion avancée des disques |
+| diskpart | CMD | Gestion avancée des disques |
 
 ---
 
@@ -83,17 +83,17 @@
 
 | Commande | Type | Description |
 |-----------|------|-------------|
-| control printers | Commande | Imprimantes |
-| printmanagement.msc | MSC | Gestion des impressions (Pro/Serveur) |
+| control printers | CMD | Gestion des imprimantes |
+| printmanagement.msc | MSC | Gestion des impressions |
 
 ---
 
-# 📁 Partages et fichiers
+# 📁 Partages et Fichiers
 
 | Commande | Type | Description |
 |-----------|------|-------------|
 | fsmgmt.msc | MSC | Dossiers partagés |
-| explorer | EXE | Explorateur de fichiers |
+| explorer | EXE | Explorateur Windows |
 
 ---
 
@@ -104,7 +104,7 @@
 | mmsys.cpl | CPL | Paramètres audio |
 | joy.cpl | CPL | Contrôleurs de jeu |
 | main.cpl | CPL | Souris |
-| control keyboard | Commande | Clavier |
+| control keyboard | CMD | Clavier |
 | bthprops.cpl | CPL | Bluetooth |
 | colorcpl | CPL | Gestion des couleurs |
 | devmgmt.msc | MSC | Gestionnaire de périphériques |
@@ -115,12 +115,12 @@
 
 | Commande | Type | Description |
 |-----------|------|-------------|
-| desk.cpl | CPL | Paramètres d'affichage (anciens Windows) |
-| control.exe /name Microsoft.Display | Commande | Affichage moderne |
+| desk.cpl | CPL | Ancien panneau d'affichage |
+| control.exe /name Microsoft.Display | CMD | Paramètres d'affichage modernes |
 
 ---
 
-# 🚀 Outils de dépannage
+# 🚀 Outils de Dépannage
 
 | Commande | Type | Description |
 |-----------|------|-------------|
@@ -129,13 +129,13 @@
 | wt | EXE | Windows Terminal |
 | dxdiag | EXE | Diagnostic DirectX |
 | msinfo32 | EXE | Informations système |
-| mrt | EXE | Outil de suppression de logiciels malveillants |
-| sfc /scannow | Commande | Vérification système |
-| chkdsk | Commande | Vérification disque |
+| mrt | EXE | Outil de suppression des logiciels malveillants |
+| sfc /scannow | CMD | Vérification des fichiers système |
+| chkdsk | CMD | Vérification du disque |
 
 ---
 
-# ⭐ TOP 20 TSSR À CONNAÎTRE PAR CŒUR
+# ⭐ Top 20 TSSR à Connaître par Cœur
 
 ```text
 appwiz.cpl
@@ -164,22 +164,25 @@ netplwiz
 
 # 🏛️ Registre Windows (Hives)
 
-| Ruche | Abréviation | Contenu |
+| Ruche | Abréviation | Description |
 |---------|---------|---------|
 | HKEY_CLASSES_ROOT | HKCR | Associations de fichiers |
-| HKEY_CURRENT_USER | HKCU | Profil utilisateur connecté |
-| HKEY_LOCAL_MACHINE | HKLM | Configuration machine |
-| HKEY_USERS | HKU | Tous les profils utilisateurs |
+| HKEY_CURRENT_USER | HKCU | Paramètres de l'utilisateur connecté |
+| HKEY_LOCAL_MACHINE | HKLM | Configuration de l'ordinateur |
+| HKEY_USERS | HKU | Profils des utilisateurs |
 | HKEY_CURRENT_CONFIG | HKCC | Configuration matérielle active |
 
-## Chemins souvent utilisés
+## 📂 Chemins Fréquemment Utilisés
 
 ```text
 HKCU\Software
-HKLM\Software
-HKLM\Software\Microsoft
-HKLM\SYSTEM
-HKLM\SYSTEM\CurrentControlSet\Services
 HKCU\Control Panel
 HKCU\Environment
+
+HKLM\Software
+HKLM\Software\Microsoft
+
+HKLM\SYSTEM
+HKLM\SYSTEM\CurrentControlSet
+HKLM\SYSTEM\CurrentControlSet\Services
 ```
