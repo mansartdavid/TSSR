@@ -121,6 +121,7 @@
 | gpedit.msc | Stratégie de groupe locale |
 | secpol.msc | Politique de sécurité locale |
 | explorer | Explorateur Windows |
+| mdsched.exe | Vérification de l'utilisation de la RAM |
 
 ---
 
