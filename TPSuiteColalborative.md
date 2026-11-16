@@ -1,10 +1,10 @@
-# <span style="color:#2F5597">Étude de choix d'une suite collaborative</span>
+#Étude de choix d'une suite collaborative
 
-## <span style="color:#4472C4">Contexte</span>
+##Contexte
 
 L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettre en place une suite collaborative répondant aux besoins suivants :
 
-### <span style="color:#4472C4">Population 1 : Administration (10 utilisateurs)</span>
+###Population 1 : Administration (10 utilisateurs)
 
 - Comptabilité
 
@@ -22,7 +22,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Messagerie professionnelle
 
-### <span style="color:#4472C4">Population 2 : Terrain / Commerciaux (30 utilisateurs)</span>
+###Population 2 : Terrain / Commerciaux (30 utilisateurs)
 
 **Besoins :**
 
@@ -34,7 +34,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Environ 20 Go de stockage par utilisateur
 
-### <span style="color:#4472C4">Population 3 : Ensemble des collaborateurs</span>
+###Population 3 : Ensemble des collaborateurs
 
 **Besoins :**
 
@@ -46,11 +46,11 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 ---
 
-# <span style="color:#4472C4">Solutions étudiées</span>
+#Solutions étudiées
 
 ## Google Workspace
 
-### <span style="color:#70AD47">Avantages</span>
+###Avantages
 
 - Coût réduit
 
@@ -58,7 +58,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Stockage généreux
 
-### <span style="color:#C00000">Inconvénients</span>
+###Inconvénients
 
 - Incompatibilité avec les macros VBA Excel
 
@@ -68,7 +68,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 ## Microsoft 365
 
-### <span style="color:#70AD47">Avantages</span>
+###Avantages
 
 - Compatibilité totale avec Excel et les macros VBA
 
@@ -80,12 +80,12 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Solution unique pour toute l'entreprise
 
-### <span style="color:#C00000">Inconvénients</span>
+###Inconvénients
 
 - Coût supérieur à Google Workspace
 
 ---
-## <span style="color:#00B050">Comparaison rapide des solutions</span>
+##Comparaison rapide des solutions
 
 | Critère | Google Workspace | Microsoft 365 |
 |----------|----------|----------|
@@ -98,14 +98,14 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 | Sécurité avancée | ⚠️ Selon les offres | ✅ Incluse dans Business Premium |
 | Adaptation aux besoins d'Atelier ExploreIT | ⚠️ Partielle | ✅ Complète |
 
-### <span style="color:#00B050">Synthèse</span>
+###Synthèse
 
 Google Workspace représente une solution intéressante grâce à son coût plus faible et à sa simplicité d'utilisation. En revanche, l'absence de compatibilité avec les macros VBA d'Excel constitue un point bloquant pour les services administratifs de l'entreprise.
 
 Microsoft 365 est plus coûteux, mais il répond à l'ensemble des besoins identifiés, notamment pour la comptabilité, les ressources humaines et la direction. C'est donc la solution retenue pour Atelier ExploreIT.  
 
   
-# <span style="color:#00B050">Solution retenue</span>
+#Solution retenue
 
 L'analyse montre que les besoins des utilisateurs ne sont pas identiques.
 
@@ -123,9 +123,9 @@ Afin d'optimiser les coûts tout en répondant aux besoins fonctionnels, deux li
 
 ---
 
-# <span style="color:#4472C4">Justification du choix</span>
+#Justification du choix
 
-## <span style="color:#4472C4">Microsoft 365 Business Premium (10 licences)</span>
+##Microsoft 365 Business Premium (10 licences)
 
 Cette licence apporte :
 
@@ -147,9 +147,9 @@ Cette licence apporte :
 
 - Authentification multifacteur
 
-> <span style="color:#00B050"><strong>Cette offre répond intégralement aux besoins des services administratifs.</strong></span>
+> Cette offre répond intégralement aux besoins des services administratifs.
 
-## <span style="color:#70AD47">Microsoft 365 Business Basic (30 licences)</span>
+##Microsoft 365 Business Basic (30 licences)
 
 Cette licence apporte :
 
@@ -171,7 +171,7 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 ---
 
-# <span style="color:#4472C4">Estimation financière</span>
+#Estimation financière
 
 ## Tarifs retenus
 
@@ -191,7 +191,7 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 | **Total** | **40** | **358,60 €** | **430,30 €** |
 
-> <span style="color:#00B050"><strong>Coût mensuel TTC : 430,30 €</strong></span>
+> Coût mensuel TTC : 430,30 €
 
 ## Coût annuel
 
@@ -208,7 +208,7 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 ---
 
-## <span style="color:#4472C4">Analyse budgétaire</span>
+##Analyse budgétaire
 
 Le coût total de la solution retenue représente :
 
@@ -241,7 +241,7 @@ La présence d'un parc informatique Windows, l'utilisation d'Excel avec macros V
 La migration sera plus simple, les utilisateurs conserveront leurs outils habituels et l'entreprise bénéficiera d'une gestion centralisée de ses services et de sa sécurité.  
 
   
-## <span style="color:#00B050">Conclusion</span>  
+##Conclusion  
 
 La solution retenue repose exclusivement sur Microsoft 365 :
 
