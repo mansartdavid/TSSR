@@ -219,18 +219,7 @@ Le coût total de la solution retenue représente :
 Cette répartition des licences permet de faire des économies tout en répondant aux besoins de chacun. Les équipes administratives disposent des outils avancés dont elles ont besoin, tandis que les commerciaux profitent d'une offre plus légère mais parfaitement adaptée à leur utilisation quotidienne.
 
 ---
-
-# <span style="color:#00B050">Conclusion</span>
-
-La solution retenue repose exclusivement sur Microsoft 365 :
-
-- 10 licences Business Premium pour les utilisateurs nécessitant Excel avec macros VBA.
-
-- 30 licences Business Basic pour les utilisateurs terrain.
-
-Cette architecture répond à l'ensemble des besoins fonctionnels, garantit une administration simplifiée, assure la compatibilité avec les outils Microsoft déjà largement utilisés en entreprise et permet d'optimiser les coûts en évitant l'attribution de licences Premium à l'ensemble des salariés.
-
-## Matrice de décision
+### Matrice de décision
 
 | Critère | Google Workspace | Microsoft 365 | Avantage |
 |----------|----------|----------|----------|
@@ -249,12 +238,18 @@ Bien que Google Workspace soit moins coûteux, Microsoft 365 est la solution la 
 
 La présence d'un parc informatique Windows, l'utilisation d'Excel avec macros VBA et les fonctionnalités d'administration avancées constituent des arguments importants en faveur de Microsoft 365.
 
-La migration sera plus simple, les utilisateurs conserveront leurs outils habituels et l'entreprise bénéficiera d'une gestion centralisée de ses services et de sa sécurité.
+La migration sera plus simple, les utilisateurs conserveront leurs outils habituels et l'entreprise bénéficiera d'une gestion centralisée de ses services et de sa sécurité.  
 
-**Microsoft 365 est donc la solution recommandée pour Atelier ExploreIT.**
-    
-> <span style="color:#00B050"><strong>
+  
+## <span style="color:#00B050">Conclusion</span>  
 
-La solution est donc techniquement cohérente, évolutive et économiquement pertinente pour Atelier ExploreIT.
+La solution retenue repose exclusivement sur Microsoft 365 :
 
-</strong></span>
+- 10 licences Business Premium pour les utilisateurs nécessitant Excel avec macros VBA.
+
+- 30 licences Business Basic pour les utilisateurs terrain.
+
+Cette architecture répond à l'ensemble des besoins fonctionnels, garantit une administration simplifiée, assure la compatibilité avec les outils Microsoft déjà largement utilisés en entreprise et permet d'optimiser les coûts en évitant l'attribution de licences Premium à l'ensemble des salariés.
+
+##**Microsoft 365 est donc la solution recommandée pour Atelier ExploreIT.**  
+##**La solution est donc techniquement cohérente, évolutive et économiquement pertinente pour Atelier ExploreIT.**
