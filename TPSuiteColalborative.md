@@ -199,7 +199,25 @@ Le coût total de la solution retenue représente :
 Cette répartition des licences permet de faire des économies tout en répondant aux besoins de chacun. Les équipes administratives disposent des outils avancés dont elles ont besoin, tandis que les commerciaux profitent d'une offre plus légère mais parfaitement adaptée à leur utilisation quotidienne.
 
 ---
-![[Pasted image 20261116145214.png]]
+## <span style="color:#00B050">Comparaison rapide des solutions</span>
+
+| Critère | Google Workspace | Microsoft 365 |
+|----------|----------|----------|
+| Coût | ✅ Généralement moins cher | ❌ Plus coûteux |
+| Prise en main | ✅ Simple et intuitive | ✅ Très répandue en entreprise |
+| Stockage | ✅ Généreux selon l'offre choisie | ✅ Suffisant pour les besoins de l'entreprise |
+| Compatibilité Excel VBA | ❌ Non compatible | ✅ Compatible à 100 % |
+| Intégration Windows | ⚠️ Limitée | ✅ Native |
+| Administration des utilisateurs | ⚠️ Plus basique | ✅ Plus complète |
+| Sécurité avancée | ⚠️ Selon les offres | ✅ Incluse dans Business Premium |
+| Adaptation aux besoins d'Atelier ExploreIT | ⚠️ Partielle | ✅ Complète |
+
+### <span style="color:#00B050">Synthèse</span>
+
+Google Workspace représente une solution intéressante grâce à son coût plus faible et à sa simplicité d'utilisation. En revanche, l'absence de compatibilité avec les macros VBA d'Excel constitue un point bloquant pour les services administratifs de l'entreprise.
+
+Microsoft 365 est plus coûteux, mais il répond à l'ensemble des besoins identifiés, notamment pour la comptabilité, les ressources humaines et la direction. C'est donc la solution retenue pour Atelier ExploreIT.  
+
 # <span style="color:#00B050">Conclusion</span>
 
 La solution retenue repose exclusivement sur Microsoft 365 :
