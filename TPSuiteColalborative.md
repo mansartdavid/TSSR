@@ -1,10 +1,10 @@
-#Étude de choix d'une suite collaborative
+# Étude de choix d'une suite collaborative
 
-##Contexte
+## Contexte
 
 L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettre en place une suite collaborative répondant aux besoins suivants :
 
-###Population 1 : Administration (10 utilisateurs)
+### Population 1 : Administration (10 utilisateurs)
 
 - Comptabilité
 
@@ -22,7 +22,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Messagerie professionnelle
 
-###Population 2 : Terrain / Commerciaux (30 utilisateurs)
+### Population 2 : Terrain / Commerciaux (30 utilisateurs)
 
 **Besoins :**
 
@@ -34,7 +34,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Environ 20 Go de stockage par utilisateur
 
-###Population 3 : Ensemble des collaborateurs
+### Population 3 : Ensemble des collaborateurs
 
 **Besoins :**
 
@@ -50,7 +50,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 ## Google Workspace
 
-###Avantages
+### Avantages
 
 - Coût réduit
 
@@ -58,7 +58,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Stockage généreux
 
-###Inconvénients
+### Inconvénients
 
 - Incompatibilité avec les macros VBA Excel
 
@@ -68,7 +68,7 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 ## Microsoft 365
 
-###Avantages
+### Avantages
 
 - Compatibilité totale avec Excel et les macros VBA
 
@@ -80,12 +80,12 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 
 - Solution unique pour toute l'entreprise
 
-###Inconvénients
+### Inconvénients
 
 - Coût supérieur à Google Workspace
 
 ---
-##Comparaison rapide des solutions
+## Comparaison rapide des solutions
 
 | Critère | Google Workspace | Microsoft 365 |
 |----------|----------|----------|
@@ -98,14 +98,14 @@ L'entreprise fictive **Atelier ExploreIT** compte 40 salariés et souhaite mettr
 | Sécurité avancée | ⚠️ Selon les offres | ✅ Incluse dans Business Premium |
 | Adaptation aux besoins d'Atelier ExploreIT | ⚠️ Partielle | ✅ Complète |
 
-###Synthèse
+### Synthèse
 
 Google Workspace représente une solution intéressante grâce à son coût plus faible et à sa simplicité d'utilisation. En revanche, l'absence de compatibilité avec les macros VBA d'Excel constitue un point bloquant pour les services administratifs de l'entreprise.
 
 Microsoft 365 est plus coûteux, mais il répond à l'ensemble des besoins identifiés, notamment pour la comptabilité, les ressources humaines et la direction. C'est donc la solution retenue pour Atelier ExploreIT.  
 
   
-#Solution retenue
+# Solution retenue
 
 L'analyse montre que les besoins des utilisateurs ne sont pas identiques.
 
@@ -123,9 +123,9 @@ Afin d'optimiser les coûts tout en répondant aux besoins fonctionnels, deux li
 
 ---
 
-#Justification du choix
+# Justification du choix
 
-##Microsoft 365 Business Premium (10 licences)
+## Microsoft 365 Business Premium (10 licences)
 
 Cette licence apporte :
 
@@ -149,7 +149,7 @@ Cette licence apporte :
 
 > Cette offre répond intégralement aux besoins des services administratifs.
 
-##Microsoft 365 Business Basic (30 licences)
+## Microsoft 365 Business Basic (30 licences)
 
 Cette licence apporte :
 
@@ -171,7 +171,7 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 ---
 
-#Estimation financière
+# Estimation financière
 
 ## Tarifs retenus
 
@@ -208,7 +208,7 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 ---
 
-##Analyse budgétaire
+## Analyse budgétaire
 
 Le coût total de la solution retenue représente :
 
@@ -241,7 +241,7 @@ La présence d'un parc informatique Windows, l'utilisation d'Excel avec macros V
 La migration sera plus simple, les utilisateurs conserveront leurs outils habituels et l'entreprise bénéficiera d'une gestion centralisée de ses services et de sa sécurité.  
 
   
-##Conclusion  
+## Conclusion  
 
 La solution retenue repose exclusivement sur Microsoft 365 :
 
@@ -251,5 +251,5 @@ La solution retenue repose exclusivement sur Microsoft 365 :
 
 Cette architecture répond à l'ensemble des besoins fonctionnels, garantit une administration simplifiée, assure la compatibilité avec les outils Microsoft déjà largement utilisés en entreprise et permet d'optimiser les coûts en évitant l'attribution de licences Premium à l'ensemble des salariés.
 
-##**Microsoft 365 est donc la solution recommandée pour Atelier ExploreIT.**  
-##**La solution est donc techniquement cohérente, évolutive et économiquement pertinente pour Atelier ExploreIT.**
+## **Microsoft 365 est donc la solution recommandée pour Atelier ExploreIT.**  
+## **La solution est donc techniquement cohérente, évolutive et économiquement pertinente pour Atelier ExploreIT.**
