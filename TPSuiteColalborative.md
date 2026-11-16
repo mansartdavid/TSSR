@@ -230,6 +230,29 @@ La solution retenue repose exclusivement sur Microsoft 365 :
 
 Cette architecture répond à l'ensemble des besoins fonctionnels, garantit une administration simplifiée, assure la compatibilité avec les outils Microsoft déjà largement utilisés en entreprise et permet d'optimiser les coûts en évitant l'attribution de licences Premium à l'ensemble des salariés.
 
+## Matrice de décision
+
+| Critère | Google Workspace | Microsoft 365 | Avantage |
+|----------|----------|----------|----------|
+| Prix | ✅ | ❌ | Google Workspace |
+| Migration depuis l'existant | ⚠️ Nécessite des adaptations | ✅ Plus simple | Microsoft 365 |
+| Accessibilité | ✅ Applications Web performantes | ✅ Applications Web et Desktop | Égalité |
+| Compatibilité avec le parc Windows | ⚠️ Correcte | ✅ Native | Microsoft 365 |
+| Hébergement des données | ✅ Conforme RGPD | ✅ Conforme RGPD | Égalité |
+| Sécurité | ✅ Bonne | ✅ Très complète | Microsoft 365 |
+| Administration | ⚠️ Plus limitée | ✅ Plus complète | Microsoft 365 |
+| Compatibilité Excel VBA | ❌ Non compatible | ✅ Compatible | Microsoft 365 |
+
+### Recommandation
+
+Bien que Google Workspace soit moins coûteux, Microsoft 365 est la solution la plus adaptée aux besoins de l'entreprise.
+
+La présence d'un parc informatique Windows, l'utilisation d'Excel avec macros VBA et les fonctionnalités d'administration avancées constituent des arguments importants en faveur de Microsoft 365.
+
+La migration sera plus simple, les utilisateurs conserveront leurs outils habituels et l'entreprise bénéficiera d'une gestion centralisée de ses services et de sa sécurité.
+
+**Microsoft 365 est donc la solution recommandée pour Atelier ExploreIT.**
+    
 > <span style="color:#00B050"><strong>
 
 La solution est donc techniquement cohérente, évolutive et économiquement pertinente pour Atelier ExploreIT.
