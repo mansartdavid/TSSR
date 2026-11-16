@@ -184,7 +184,8 @@ Les utilisateurs terrain n'ont pas besoin d'Excel Desktop ni de macros VBA.
 
 | **Total annuel** | **4 303,20 €** | **5 163,60 €** |
 
-> <span style="color:#00B050"><strong>Coût annuel TTC : 5 163,60 €</strong></span>
+  
+> Coût annuel TTC : 5 163,60 €
 
 ---
 
