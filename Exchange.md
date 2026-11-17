@@ -1,5 +1,11 @@
 # Installation d'Exchange Server SE
 
+*LES OUTILS PRÉQUIS NE SONT PAS PRÉSENT EN LIGNE*  
+*ExchangeServerSE-x64.iso*  
+*rewrite_amd64_fr-FR.msi*  
+*UcmaRuntimeSetup.exe*  
+*vcredist_x64.exe*  
+  
 ## Prérequis
 
 ### Serveur Active Directory (Windows Server 2025)
