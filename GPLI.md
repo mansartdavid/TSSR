@@ -391,8 +391,8 @@ Nouvelle installation
 
 ```text
 Serveur : localhost
-Utilisateur : vincent
-Mot de passe : Azerty1
+Utilisateur : david
+Mot de passe : root
 Base : glpi
 ```
 
