@@ -187,7 +187,7 @@ CREATE DATABASE glpi;
 Créer l'utilisateur :
 
 ```sql
-GRANT ALL PRIVILEGES ON glpi.* TO 'vincent'@'localhost' IDENTIFIED BY 'Azerty1';
+GRANT ALL PRIVILEGES ON glpi.* TO 'david'@'localhost' IDENTIFIED BY 'root';
 ```
 
 Appliquer :
