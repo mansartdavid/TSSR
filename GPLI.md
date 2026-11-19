@@ -1,32 +1,33 @@
-# TP - Installation de GLPI 12.x sur Debian 13.7
+# TP - Installation de GLPI 12.0.2 sur Debian 13.7
 
 ## Objectif
 
-Mettre en place un serveur GLPI fonctionnel sous Debian 13.7 avec :
+Mettre en place un serveur GLPI fonctionnel sous Debian 13.7 en mode CLI avec :
 
 - SSH
-- Apache
+- Apache2
 - MariaDB
-- PHP
-- GLPI 12.x
+- PHP 8.x
+- PHP-FPM
+- GLPI 12.0.2
 - GLPI Agent
-- Inventaire automatique du serveur
+- Inventaire automatique
 
 ---
 
-# Schéma
+# Architecture
 
 ```text
 Debian 13.7
 │
-├── SSH
-├── Apache
+├── SSH (22)
+├── Apache2 (80)
 ├── MariaDB
-├── PHP
-├── GLPI
+├── PHP-FPM
+├── GLPI 12.0.2
 └── GLPI Agent
         │
-        └── Inventaire automatique
+        └── Remontée d'inventaire automatique
 ```
 
 ---
@@ -52,37 +53,43 @@ Vérifier la version :
 cat /etc/os-release
 ```
 
-Résultat attendu : Debian 13.7
+Résultat attendu :
+
+```text
+Debian GNU/Linux 13.7
+```
+
+✅ Système à jour
 
 ---
 
 # 2 - Vérification du réseau
 
-Afficher l'adresse IP :
+Afficher la configuration réseau :
 
 ```bash
 ip a
 ```
 
-Tester Internet :
+Tester la connectivité Internet :
 
 ```bash
 ping 8.8.8.8
 ```
 
-Tester le DNS :
+Tester la résolution DNS :
 
 ```bash
 ping google.fr
 ```
 
-✅ Réseau opérationnel
+✅ Réseau fonctionnel
 
 ---
 
-# 3 - Installation de SSH
+# 3 - Installation du serveur SSH
 
-Installer le serveur SSH :
+Installer OpenSSH :
 
 ```bash
 apt install openssh-server -y
@@ -101,7 +108,7 @@ Vérifier :
 systemctl status ssh
 ```
 
-Vérifier l'écoute du port 22 :
+Contrôler le port 22 :
 
 ```bash
 ss -tulpn | grep :22
@@ -111,62 +118,48 @@ ss -tulpn | grep :22
 
 ---
 
-# 4 - Installation d'Apache
+# 4 - Installation du serveur Web et de MariaDB
 
-Installer Apache :
-
-```bash
-apt install apache2 -y
-```
-
-Activer Apache :
+Installer Apache, PHP et MariaDB :
 
 ```bash
-systemctl enable apache2
-systemctl start apache2
+apt install apache2 php mariadb-server -y
 ```
 
-Contrôle :
+Installer les modules PHP requis pour GLPI :
 
 ```bash
-systemctl status apache2
+apt install php-xml php-common php-json php-mysql php-mbstring php-curl php-gd php-intl php-zip php-bz2 php-apcu -y
 ```
 
-Tester depuis un navigateur :
+Installer les modules complémentaires :
 
-```text
-http://IP_DU_SERVEUR
+```bash
+apt install php-ldap php-fpm php-bcmath -y
 ```
 
-✅ Apache opérationnel
+Vérifier PHP :
+
+```bash
+php -v
+```
+
+✅ Apache, MariaDB et PHP installés
 
 ---
 
-# 5 - Installation de MariaDB
+# 5 - Sécurisation de MariaDB
 
-Installer MariaDB :
-
-```bash
-apt install mariadb-server -y
-```
-
-Activer le service :
+Lancer l'assistant :
 
 ```bash
-systemctl enable mariadb
-systemctl start mariadb
-```
-
-Sécuriser l'installation :
-
-```bash
-mysql_secure_installation
+mariadb-secure-installation
 ```
 
 Choix recommandés :
 
 ```text
-Définir un mot de passe root : Oui
+Définir le mot de passe root : Oui
 Supprimer les utilisateurs anonymes : Oui
 Interdire l'accès root distant : Oui
 Supprimer la base de test : Oui
@@ -177,31 +170,7 @@ Recharger les privilèges : Oui
 
 ---
 
-# 6 - Installation de PHP
-
-Installer PHP et les modules nécessaires :
-
-```bash
-apt install php php-mysql php-curl php-gd php-intl php-mbstring php-xml php-zip php-ldap php-imap php-bcmath -y
-```
-
-Vérifier :
-
-```bash
-php -v
-```
-
-Redémarrer Apache :
-
-```bash
-systemctl restart apache2
-```
-
-✅ PHP installé
-
----
-
-# 7 - Création de la base GLPI
+# 6 - Création de la base GLPI
 
 Connexion à MariaDB :
 
@@ -213,21 +182,31 @@ Créer la base :
 
 ```sql
 CREATE DATABASE glpi;
+```
 
-CREATE USER 'glpi'@'localhost' IDENTIFIED BY 'MotDePasse123';
+Créer l'utilisateur :
 
-GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost';
+```sql
+GRANT ALL PRIVILEGES ON glpi.* TO 'vincent'@'localhost' IDENTIFIED BY 'Azerty1';
+```
 
+Appliquer :
+
+```sql
 FLUSH PRIVILEGES;
+```
 
+Quitter :
+
+```sql
 EXIT;
 ```
 
-✅ Base GLPI prête
+✅ Base de données créée
 
 ---
 
-# 8 - Téléchargement de GLPI
+# 7 - Téléchargement de GLPI
 
 Se placer dans le dossier temporaire :
 
@@ -238,33 +217,149 @@ cd /tmp
 Télécharger GLPI :
 
 ```bash
-wget https://github.com/glpi-project/glpi/releases/latest/download/glpi.tgz
+wget https://github.com/glpi-project/glpi/releases/download/12.0.2/glpi-12.0.2.tgz
 ```
 
-Extraire l'archive :
+Extraire directement dans Apache :
 
 ```bash
-tar -xzf glpi.tgz
+tar -xzvf glpi-12.0.2.tgz -C /var/www/html
 ```
 
-Déplacer GLPI :
+Vérifier :
 
 ```bash
-mv glpi /var/www/html/
+ls /var/www/html
 ```
 
-Définir les permissions :
-
-```bash
-chown -R www-data:www-data /var/www/html/glpi
-chmod -R 755 /var/www/html/glpi
-```
-
-✅ Fichiers GLPI installés
+✅ GLPI déployé
 
 ---
 
-# 9 - Installation de GLPI
+# 8 - Configuration des permissions
+
+Attribuer les permissions :
+
+```bash
+chmod -R 755 /var/www/html/
+```
+
+Attribuer le propriétaire Apache :
+
+```bash
+chown -R www-data:www-data /var/www/html/
+```
+
+Redémarrer les services :
+
+```bash
+systemctl restart apache2 mariadb.service
+```
+
+✅ Permissions configurées
+
+---
+
+# 9 - Configuration du VirtualHost Apache
+
+Créer le fichier :
+
+```bash
+nano /etc/apache2/sites-available/glpi.conf
+```
+
+Ajouter :
+
+```apache
+<VirtualHost *:80*
+    ServerName glpi
+    ServerAli*s 172.X.X.X
+
+    DocumentRoot /*ar/www/html
+
+    Alias /glpi /*ar/www/html/glpi/public
+
+    <Dire*tory*/var/www/html/glpi/public>
+       *Options -Indexes +FollowSymLinks
+ *      Require all*granted
+
+        RewriteEngine On
+*       RewriteBase /glpi/
+
+       *RewriteCond %{REQUEST_FILENAME* !-f
+        RewriteCond %{REQUEST*FILENAME} !-d
+        RewriteRule * index.php [QSA,L]
+    </Directory*
+
+    <FilesMatch \.php$>
+*       SetHandler "proxy:unix:/run*php*php8.4-fpm.sock|fcgi*//localhost"
+    </FilesMatch>
+
+  * ErrorLog ${APACHE_LOG_DIR}/glpi_e*ror*log
+    CustomLog ${APACHE_LOG_DIR*/glpi_access.log combined
+</Virtua*Host*
+```
+
+Sauvegarder :
+
+```text
+*TRL + O
+Entrée
+CTRL + X*```
+
+✅ VirtualHost créé*
+---
+
+# 10 - Activation des module* Apache*
+Activer les modules nécessaires :*
+```bash
+a2enmod proxy_fcgi setenv*f*```
+
+```bash
+a2enmod*rewrite
+```
+
+Activer PHP-FPM :
+
+*``bash
+a2en*onf php*-fpm
+```
+
+Désactiver le site par défaut :
+
+```bash
+a2dissite 000-default.conf
+```
+
+Activer le site GLPI :
+
+```bash
+a2ensite glpi.conf
+```
+
+Redémarrer Apache :
+
+```bash
+systemctl restart apache2 mariadb.service
+```
+
+Vérifier :
+
+```bash
+apachectl configtest
+```
+
+Résultat attendu :
+
+```text
+Syntax OK
+```
+
+✅ Configuration Apache validée
+
+---
+
+# 11 - Installation de GLPI
 
 Depuis un navigateur :
 
@@ -274,30 +369,30 @@ http://IP_DU_SERVEUR/glpi
 
 Suivre l'assistant :
 
-## Langue
+### Langue
 
 ```text
 Français
 ```
 
-## Contrat de licence
+### Licence
 
 ```text
 Accepter
 ```
 
-## Type d'installation
+### Type d'installation
 
 ```text
 Nouvelle installation
 ```
 
-## Paramètres de base de données
+### Connexion à la base
 
 ```text
 Serveur : localhost
-Utilisateur : glpi
-Mot de passe : MotDePasse123
+Utilisateur : vincent
+Mot de passe : Azerty1
 Base : glpi
 ```
 
@@ -307,22 +402,22 @@ Finaliser l'installation.
 
 ---
 
-# 10 - Première connexion
+# 12 - Première connexion
 
-Identifiants par défaut :
+Comptes par défaut :
 
-| Compte | Mot de passe |
-|----------|----------|
+| Utilisateur | Mot de passe |
+|------------|------------|
 | glpi | glpi |
 | tech | tech |
 | normal | normal |
 | post-only | postonly |
 
-⚠️ Changer immédiatement le mot de passe du compte glpi.
+⚠️ Modifier immédiatement le mot de passe du compte administrateur.
 
 ---
 
-# 11 - Installation de GLPI Agent
+# 13 - Installation de GLPI Agent
 
 Installer l'agent :
 
@@ -336,7 +431,7 @@ Vérifier :
 glpi-agent --version
 ```
 
-Configurer l'adresse du serveur :
+Configurer :
 
 ```bash
 nano /etc/glpi-agent/agent.cfg
@@ -348,19 +443,21 @@ Ajouter :
 server = http://IP_DU_SERVEUR/glpi/front/inventory.php
 ```
 
-Sauvegarder le fichier.
+Enregistrer.
+
+✅ Agent configuré
 
 ---
 
-# 12 - Envoi du premier inventaire
+# 14 - Premier inventaire
 
-Lancer un inventaire manuel :
+Lancer manuellement :
 
 ```bash
 glpi-agent
 ```
 
-Contrôler dans GLPI :
+Dans GLPI :
 
 ```text
 Parc
@@ -369,13 +466,13 @@ Parc
 
 Le serveur Debian doit apparaître.
 
-✅ Inventaire fonctionnel
+✅ Inventaire remonté
 
 ---
 
-# 13 - Vérifications finales
+# 15 - Vérifications finales
 
-Contrôler les services :
+Contrôle des services :
 
 ```bash
 systemctl status ssh
@@ -390,6 +487,10 @@ systemctl status mariadb
 ```
 
 ```bash
+systemctl status php8.4-fpm
+```
+
+```bash
 systemctl status glpi-agent
 ```
 
@@ -401,23 +502,57 @@ active (running)
 
 ---
 
+# Dépannage rapide
+
+## Vérifier Apache
+
+```bash
+apachectl configtest
+```
+
+## Vérifier les logs GLPI
+
+```bash
+tail -f /var/log/apache2/glpi_error.log
+```
+
+## Vérifier les ports ouverts
+
+```bash
+ss -tulpn
+```
+
+## Vérifier PHP
+
+```bash
+php -v
+```
+
+## Vérifier MariaDB
+
+```bash
+mysql -u root -p
+```
+
+---
+
 # Résultat attendu
 
-✅ Debian installée
+✅ Debian 13.7 installée
 
 ✅ SSH opérationnel
 
-✅ Apache opérationnel
+✅ Apache fonctionnel
 
-✅ MariaDB opérationnelle
+✅ MariaDB sécurisée
 
-✅ PHP installé
+✅ PHP-FPM installé
 
-✅ GLPI accessible via navigateur
+✅ GLPI 12.0.2 accessible
 
-✅ GLPI Agent installé
+✅ Agent GLPI installé
 
-✅ Inventaire du serveur remonté dans GLPI
+✅ Inventaire automatique fonctionnel
 
 ---
 
@@ -426,12 +561,16 @@ active (running)
 ```text
 1. Mise à jour Debian
 2. Installation SSH
-3. Installation Apache
-4. Installation MariaDB
-5. Installation PHP
-6. Création de la base GLPI
-7. Installation GLPI
-8. Installation GLPI Agent
-9. Premier inventaire
-10. Vérifications finales
+3. Installation Apache / MariaDB
+4. Installation PHP
+5. Sécurisation MariaDB
+6. Création base GLPI
+7. Téléchargement GLPI
+8. Permissions
+9. VirtualHost Apache
+10. Modules Apache
+11. Installation GLPI
+12. Installation GLPI Agent
+13. Premier inventaire
+14. Vérifications finales
 ```
