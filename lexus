@@ -13,3 +13,7 @@ SLA : Service Level Agreement (GTI : Garantie de temps d'intervention // GTR : G
 VOIP : C'est une technologie qui permet de faire passer les communications téléphoniques sur un réseau IP au lieu du réseau téléphonique classique.
 ESCALADE : Passer N+1
 SERVICE : Strategie / Conception / Transition / Exploitation / Amélioration
+
+
+gpupdate /force
+gpresult /r
