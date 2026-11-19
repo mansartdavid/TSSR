@@ -574,3 +574,227 @@ mysql -u root -p
 13. Premier inventaire
 14. Vérifications finales
 ```
+
+CREATION DU SCRIPT  
+
+
+  # TP - Installation automatisée de GLPI 12.0.2 sous Debian 13.7
+
+## Objectif
+
+Automatiser l'installation des composants nécessaires à GLPI via un script Bash afin de gagner du temps lors du déploiement.
+
+⚠️ Cette méthode est idéale pour un laboratoire ou des réinstallations fréquentes.
+
+---
+
+# Prérequis
+
+- Debian 13.7
+- Accès root
+- Connexion Internet
+- Adresse IP fixe recommandée
+
+---
+
+# Création du script
+
+Créer le fichier :
+
+```bash
+nano install_glpi.sh
+```
+
+Coller le contenu suivant :
+
+```bash
+#!/bin/bash
+
+echo "===== MISE A JOUR ====="
+apt update && apt upgrade -y
+
+echo "===== INSTALLATION SSH ====="
+apt install openssh-server -y
+systemctl enable ssh
+systemctl start ssh
+
+echo "===== INSTALLATION APACHE / PHP / MARIADB ====="
+apt install apache2 php mariadb-server -y
+
+echo "===== MODULES PHP ====="
+apt install php-xml php-common php-json php-mysql \
+php-mbstring php-curl php-gd php-intl \
+php-zip php-bz2 php-apcu php-ldap \
+php-fpm php-bcmath -y
+
+echo "===== ACTIVATION DES SERVICES ====="
+systemctl enable apache2
+systemctl enable mariadb
+
+systemctl start apache2
+systemctl start mariadb
+
+echo "===== TELECHARGEMENT GLPI ====="
+cd /tmp
+
+wget https://github.com/glpi-project/glpi/releases/download/12.0.2/glpi-12.0.2.tgz
+
+tar -xzvf glpi-12.0.2.tgz -C /var/www/html
+
+echo "===== PERMISSIONS ====="
+chmod -R 755 /var/www/html/
+chown -R www-data:www-data /var/www/html/
+
+echo "===== REDEMARRAGE ====="
+systemctl restart apache2
+systemctl restart mariadb
+
+echo "===== FIN D'INSTALLATION ====="
+echo "GLPI est prêt pour la configuration."
+```
+
+---
+
+# Sauvegarder le fichier
+
+Dans Nano :
+
+```text
+CTRL + O
+Entrée
+CTRL + X
+```
+
+---
+
+# Rendre le script exécutable
+
+```bash
+chmod +x install_glpi.sh
+```
+
+---
+
+# Exécuter le script
+
+```bash
+./install_glpi.sh
+```
+
+ou
+
+```bash
+bash install_glpi.sh
+```
+
+---
+
+# Vérifications
+
+Contrôler les services :
+
+```bash
+systemctl status apache2
+```
+
+```bash
+systemctl status mariadb
+```
+
+```bash
+systemctl status ssh
+```
+
+Vérifier PHP :
+
+```bash
+php -v
+```
+
+---
+
+# Étapes restant à effectuer manuellement
+
+## Sécurisation MariaDB
+
+```bash
+mariadb-secure-installation
+```
+
+---
+
+## Création de la base GLPI
+
+```bash
+mysql -u root -p
+```
+
+```sql
+CREATE DATABASE glpi;
+
+GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost' IDENTIFIED BY 'MotDePasseFort';
+
+FLUSH PRIVILEGES;
+
+EXIT;
+```
+
+---
+
+## Configuration du VirtualHost Apache
+
+Créer :
+
+```bash
+nano /etc/apache2/sites-available/glpi.conf
+```
+
+Configurer le VirtualHost puis :
+
+```bash
+a2enmod proxy_fcgi setenvif
+a2enmod rewrite
+a2enconf php*-fpm
+
+a2dissite*000-default.conf
+a2ensite gl*i.conf
+
+systemctl restart apache2
+*`*
+
+---
+
+## Installation finale GLPI*
+Ouvrir :
+
+```text*http://IP_DU_SERVEUR/glpi*```
+
+Suivre l'assistant d'installa*ion*
+
+---
+
+# Avantages de cette méthod*
+
+✅ Gain de temps
+
+✅ Ré*uction des erreurs de saisie
+
+✅ Pr*c*dure reproductible
+
+✅ Facile à con*erver dans une base de connaissanc*s
+
+✅*Très pratique pour les laboratoire* VMware
+
+---
+
+# À retenir pour le *SSR
+
+Même si le script automatise*une grande partie du travail, il*est indispensable de comprendre*:
+
+- Le rôle d'*pache
+- Le rôle de MariaDB
+-*Le rôle de PHP-FPM
+- Les*permissions Linux
+- Le fonctionnem*nt de GLPI
+
+*e script est un gain*de temps, pas un remplacement de l* compréhension technique*
